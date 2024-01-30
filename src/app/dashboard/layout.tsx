@@ -8,7 +8,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [cities, setCities] = useState(["tokio", "perth"]);
-  const [value, setValue] = useState("");
 
   return (
     <div>
