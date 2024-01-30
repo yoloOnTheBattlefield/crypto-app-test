@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div style={{ height: "100px", background: "red" }}>
           <div>
-            <Link href="/">Portfolio</Link>
+            <Link href="/">Home</Link>
             <Link href="/portfolio">Portfolio</Link>
           </div>
         </div>
