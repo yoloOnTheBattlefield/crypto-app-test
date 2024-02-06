@@ -1,5 +1,4 @@
-
-export default function City({ params }:  { params: { cityId: string } }) {
+export default function City() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       ANALYTICS Page

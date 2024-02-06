@@ -7,7 +7,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [cities, setCities] = useState(["tokio", "perth"]);
+  const [cities] = useState(["tokio", "perth"]);
 
   return (
     <div>
