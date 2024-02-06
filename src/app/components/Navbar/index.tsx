@@ -6,7 +6,6 @@ export default function Navbar() {
   const [cities, setCities] = useState(["paris", "london"]);
   const [value, setValue] = useState("");
   const handleChange = (e) => {
-    console.log("here", e.target.value);
     setValue(e.target.value);
   };
   const handleSubmit = (e) => {
