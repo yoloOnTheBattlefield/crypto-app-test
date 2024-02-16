@@ -1,7 +1,7 @@
 "use client";
 import StoreProvider from "./StoreProvider";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
-import { addTodo, toggleTodo } from "@/lib/features/todo";
+import { addTodo, toggleTodo, removeTodo } from "@/lib/features/todo";
 
 const List = () => {
   const todos = useAppSelector((state) => state.todos);
@@ -16,12 +16,13 @@ const List = () => {
       >
         Add stuff
       </button>
-      {todos.map((todo, index) => (
+      {todos.map((todo) => (
         <li key={todo.id}>
           {todo.value}
           <button onClick={() => dispatch(toggleTodo(todo))}>
             {todo.completed ? "done" : "pending"}
           </button>
+          <button onClick={() => dispatch(removeTodo(todo))}>Delete</button>
         </li>
       ))}
     </div>
